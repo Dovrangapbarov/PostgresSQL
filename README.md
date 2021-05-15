@@ -1,2 +1,38 @@
 # PostgresSQL
 PostgresSQL üzerinde codlar sayesinde tablo oluşrurup içerik eklemek
+--create table Bölüm(bölümİd int primary key not null,Bolumadı text);
+--insert into bölüm(bölümİd,Bolumadı) values (1,'İlkmat');
+--insert into bölüm(bölümİd,Bolumadı) values (2,'Lisemat');
+--insert into bölüm(bölümİd,Bolumadı) values (3,'Görselsanatlar');
+--insert into bölüm(bölümİd,Bolumadı) values (4,'Tiatro');
+--insert into bölüm(bölümİd,Bolumadı) values (5,'FEF');
+--select * from bölüm;
+--create table Anabilimdalı(anabilimdalı_İd int primary key not null,bölüm_id int);
+--create table Ogrenci(ogrenci_İd int primary key not null,isim text,okulno int,ana_id int);
+--create table Ders(ders_İd int primary key not null,dersadı text,kredi int);
+--create table Ogrenciders(ogrenciders_İd int primary key not null,ogrenci_id int,ders_id int,vize int,fınal int);
+--select * from Ogrenciders;
+--insert into ders(ders_İd,dersadı,kredi) values (1,'matematik',3);
+--insert into ders(ders_İd,dersadı,kredi) values (2,'geometri',2);
+--insert into ders(ders_İd,dersadı,kredi) values (3,'sanat',3);
+--insert into ders(ders_İd,dersadı,kredi) values (4,'müzik',4);
+--insert into ders(ders_İd,dersadı,kredi) values (5,'tarih',5);
+--select * from ders;
+--insert into Anabilimdalı values (1,1);
+--insert into Anabilimdalı values (2,2);
+--insert into Anabilimdalı values (3,3);
+--insert into Anabilimdalı values (4,4);
+--insert into Anabilimdalı values (5,5);
+--select * from Anabilimdalı;
+--insert into Ogrenci(ogrenci_İd,isim,okulno,ana_id) values (1,'Mehmetemin',2014,1);
+--insert into Ogrenci(ogrenci_İd,isim,okulno,ana_id) values (2,'Murat',2015,2);
+--insert into Ogrenci(ogrenci_İd,isim,okulno,ana_id) values (3,'Devran',2016,3);
+--insert into Ogrenci(ogrenci_İd,isim,okulno,ana_id) values (4,'Nazar',2017,4);
+--insert into Ogrenci(ogrenci_İd,isim,okulno,ana_id) values (5,'Kasım',2018,5);
+--select * from Ogrenci;
+--insert into Ogrenciders values (1,1,1,100,100);
+--insert into Ogrenciders values (2,2,2,100,100);
+--insert into Ogrenciders values (3,3,3,100,100);
+--insert into Ogrenciders values (4,4,4,100,100);
+--insert into Ogrenciders values (5,5,5,100,100);
+--select * from Ogrenciders;
